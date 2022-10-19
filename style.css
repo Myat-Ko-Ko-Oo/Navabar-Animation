@@ -41,9 +41,9 @@ header{
     .brand{
         font-size: 3rem;
         font-weight: 300;
-        /* transform: translateX(-100rem);
-        animation: slideIn 0.5 forwards
-     */}
+        transform: translateX(-100rem);
+        animation: mymove 0.5s forwards
+     }
 
     .brand span {
         color: crimson;
@@ -54,8 +54,8 @@ nav ul {
 }
 nav ul li{
     list-style: none;
-     /* transform: translate(100rem);
-    animation: all 0.5s forwards  */
+        transform: translate(100rem);   
+     animation: mymove 0.5s forwards   
 }
 
 nav ul li:nth-child(1){
@@ -116,10 +116,8 @@ nav ul li a:hover::after{
     
 }
 
-/* @keyframes slideIn {
-    from{}to{
-
-    }
-} */
-
+@keyframes mymove {
+    from {}
+    to {transform: translateX(0);}
+  }
 
